@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:ems="5"
+        android:id="@+id/useret"
+        android:layout_below="@id/imageView"
+        android:layout_alignStart="@+id/emailet" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:ems="5"
+        android:id="@+id/lastet"
+
+        android:layout_below="@id/imageView"
+        android:layout_alignEnd="@+id/emailet" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="11"
+        android:hint="Email"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:id="@+id/emailet"
+        android:layout_below="@+id/useret"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="11"
+        android:paddingTop="15dp"
+        android:id="@+id/passwordet"
+        android:hint="Password"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_below="@+id/emailet"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="11"
+        android:paddingTop="15dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:hint="Tap to Select Date of Birth"
+        android:id="@+id/dateet"
+        android:layout_below="@+id/passwordet"
+        android:layout_alignStart="@+id/passwordet" />
+
+
+    <Spinner
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:entries="@array/array_name"
+        android:layout_below="@id/dateet"/>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="signup"
+        android:ems="13"
+        android:textSize="18dp"
+        android:id="@+id/regbt"
+        android:layout_below="@+id/gender"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
